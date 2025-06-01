@@ -30,7 +30,7 @@ if selected_year != 'Vsa leta':
 
 top_movies = filtered_df.sort_values(by='avg_rating', ascending=False).head(10)
 
-st.title("🎬 Top 10 filmov po povprečni oceni")
+st.title("Top 10 filmov po povprečni oceni")
 st.write("Filtri: minimalno število ocen, žanr, leto")
 
-st.dataframe(top_movies[['title', 'avg_rating', 'rating_count', 'genres', 'year']])
+st.dataframe(top_movies[['title', 'avg_rating', 'rating_count']])
